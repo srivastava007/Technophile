@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "780350715497",
+    "firebase_url": "https://tech-bfb69.firebaseio.com",
+    "project_id": "tech-bfb69",
+    "storage_bucket": "tech-bfb69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780350715497:android:d7b02d2e306a270a",
+        "android_client_info": {
+          "package_name": "asquero.com.tech"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780350715497-9f2499auja018vd6bvdt8bps4auqg978.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "asquero.com.tech",
+            "certificate_hash": "260b6a6ff51b90a1085214f316f57179ff073a16"
+          }
+        },
+        {
+          "client_id": "780350715497-pqvmulcm39lk5jhuqc3ehnkag6g33r36.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB57wt8olp8oQ_yzgbKxHySmAnqbg9jtCg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "780350715497-pqvmulcm39lk5jhuqc3ehnkag6g33r36.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
