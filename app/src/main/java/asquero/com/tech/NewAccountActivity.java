@@ -2,6 +2,7 @@ package asquero.com.tech;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputEditText;
 import android.support.design.widget.TextInputLayout;
@@ -71,6 +72,7 @@ public class NewAccountActivity extends AppCompatActivity {
                     mRegProgress.show();
 
                     register_user(mname, memail, mpassword);
+
                 }
 
                 else Toast.makeText(NewAccountActivity.this, "Fields cannot be left black", Toast.LENGTH_SHORT).show();
@@ -122,8 +124,13 @@ public class NewAccountActivity extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<Void> task) {
                     if(task.isSuccessful()){
-                        Toast.makeText(NewAccountActivity.this, "Verification Email Sent", Toast.LENGTH_SHORT).show();
+
                         FirebaseAuth.getInstance().signOut();
+                        Toast.makeText(NewAccountActivity.this, "Verification Email Sent", Toast.LENGTH_SHORT).show();
+
+                        Intent backIntent = new Intent(NewAccountActivity.this,SignInActivity.class);
+                        startActivity(backIntent);
+                        finish();
                     }
                 }
             });

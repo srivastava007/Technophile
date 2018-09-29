@@ -220,7 +220,7 @@ public class SignInActivity extends AppCompatActivity {
                             }
                             else{
                                 FirebaseAuth.getInstance().signOut();
-                                Toast.makeText(SignInActivity.this, "Please Verify your email", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignInActivity.this, "Please verify your email", Toast.LENGTH_SHORT).show();
                             }
                         }
                         else{
